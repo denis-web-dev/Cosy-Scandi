@@ -1,0 +1,18 @@
+.mobile-nav {
+	position: absolute;
+	    display: flex;
+    flex-direction: column;
+	gap: 20px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 320px;
+
+	padding: 30px 20px;
+	background-color: var(--footer-bg);
+	color: var(--footer-text-color);
+}
+.mobile-nav__item {
+}
+.mobile-nav__link {
+}

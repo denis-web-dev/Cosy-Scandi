@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет магазин Cosy Scandi</title>
+  <link href="./css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+
+      <nav class="header__nav nav">
+        <div class="nav__logo">
+          <a class="logo" href="#!">Cosy Scandi</a>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#!">
+              Мебель
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#!">
+              Магазин
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#!">
+              О нас
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#!">
+              Контакты
+            </a>
+          </li>
+        </ul>
+        <div class="cart">
+          <a class="cart__link" href="#!">
+            <img class="cart__img" src="./img/icons/cart.svg" alt="корзина">
+            <div class="cart__count">0</div>
+          </a>
+        </div>
+        <button class="nav__mobile-btn">
+          <img class="nav__mobile-img" src="./img/icons/mobile-nav.svg" alt="Открытие мобильной навигации">
+        </button>
+      </nav>
+
+      <div class="header__content">
+        <h1 class="header__title">Сделайте ваш интерьер более
+          минималистичным и современным</h1>
+
+        <p class="header__description">С помощью Panto вы можете легко и быстро превратить свою комнату в более
+          минималистичную и современную</p>
+
+        <form class="header__search search-form" action="">
+          <input class="search-form__input" placeholder="Поиск мебели" type="text" autocomplete="off">
+          <button class="search-form__btn">
+            <img src="./img/icons/search.svg" alt="Поиск">
+          </button>
+        </form>
+
+        <div class="header__dot-sofa">
+          <button class="info-dot">
+            <div class="info-dot__circle"></div>
+            <div class="info-dot__radius"></div>
+          </button>
+          <div class="info-hint none">
+            <label>
+              <input class="info-hint__radio" type="radio" name="sofa-color">
+              <div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
+            </label>
+            <label>
+              <input class="info-hint__radio" type="radio" name="sofa-color">
+              <div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
+            </label>
+            <label>
+              <input class="info-hint__radio" type="radio" name="sofa-color">
+              <div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
+            </label>
+          </div>
+        </div>
+
+        <div class="header__dot-vase">
+          <button class="info-dot">
+            <div class="info-dot__circle"></div>
+            <div class="info-dot__radius"></div>
+          </button>
+          <div class="info-hint none">
+            <label>
+              <input class="info-hint__radio" type="radio" name="sofa-color">
+              <div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
+            </label>
+            <label>
+              <input class="info-hint__radio" type="radio" name="sofa-color">
+              <div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
+            </label>
+            <label>
+              <input class="info-hint__radio" type="radio" name="sofa-color">
+              <div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
+            </label>
+          </div>
+        </div>
+
+        <div class="header__dot-item">
+          <button class="info-dot">
+            <div class="info-dot__circle"></div>
+            <div class="info-dot__radius"></div>
+          </button>
+          <div class="info-hint none">
+            <label>
+              <input class="info-hint__radio" type="radio" name="sofa-color">
+              <div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
+            </label>
+            <label>
+              <input class="info-hint__radio" type="radio" name="sofa-color">
+              <div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
+            </label>
+            <label>
+              <input class="info-hint__radio" type="radio" name="sofa-color">
+              <div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
+            </label>
+          </div>
+        </div>
+
+        <div class="header__dot-pot">
+          <button class="info-dot">
+            <div class="info-dot__circle"></div>
+            <div class="info-dot__radius"></div>
+          </button>
+          <div class="info-hint none">
+            <label>
+              <input class="info-hint__radio" type="radio" name="sofa-color">
+              <div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
+            </label>
+            <label>
+              <input class="info-hint__radio" type="radio" name="sofa-color">
+              <div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
+            </label>
+            <label>
+              <input class="info-hint__radio" type="radio" name="sofa-color">
+              <div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+    <ul class="mobile-nav">
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#!">
+          Мебель
+        </a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#!">
+          Магазин
+        </a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#!">
+          О нас
+        </a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#!">
+          Контакты
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <section class="benefits none">
+    <div class="container">
+      <div class="benefits__grid">
+
+        <h2 class="benefits__title">Почему?
+          Выбирая нас</h2>
+
+        <div class="benefit">
+          <h3 class="benefit__title">Роскошные условия</h3>
+          <p class="benefit__text">Преимущество аренды рабочего пространства у нас заключается в том, что мы
+            обеспечиваем комфортное обслуживание и
+            всестороннюю поддержку.</p>
+          <a class="read-more" href="#!">Подробнее</a>
+        </div>
+
+        <div class="benefit">
+          <h3 class="benefit__title">Доступная цена</h3>
+          <p class="benefit__text">Вы можете получить рабочее пространство высочайшего качества по доступной цене и при
+            этом пользоваться
+            удобствами,
+            которые есть только здесь.</p>
+          <a class="read-more" href="#!">Подробнее</a>
+        </div>
+
+        <div class="benefit">
+          <h3 class="benefit__title">Множество вариантов</h3>
+          <p class="benefit__text">Мы предлагаем множество уникальных вариантов рабочих пространств, чтобы вы могли
+            выбрать рабочее пространство по
+            своему
+            вкусу.</p>
+          <a class="read-more" href="#!">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products none">
+    <div class="container">
+      <div class="products__title">Самый продаваемый продукт</div>
+      <div class="products__tabs">
+        <div class="tab-controls">
+          <button data-tab="all" class="tab-controls__btn tab-controls__btn--active">Все товары</button>
+          <button data-tab="chair" class="tab-controls__btn">Кресло</button>
+          <button data-tab="beds" class="tab-controls__btn">Кровати</button>
+          <button data-tab="sofa" class="tab-controls__btn">Диван</button>
+          <button data-tab="lamp" class="tab-controls__btn">Светильники</button>
+        </div>
+
+      </div>
+
+      <div class="products__slider">
+
+        <div class="slider">
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+
+              <div data-tab-value="chair" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/chair-01.png" srcset="./img/products/chair-01@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Кресло</a>
+                  <h3 class="card__title">Кресло Sakarias</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">38 133 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="chair" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/chair-02.png" srcset="./img/products/chair-02@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Кресло</a>
+                  <h3 class="card__title">Кресло Baltsar</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">29 086 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="chair" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/chair-03.png" srcset="./img/products/chair-03@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Кресло</a>
+                  <h3 class="card__title">Кресло Anjay</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">28 700 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="chair" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/chair-04.png" srcset="./img/products/chair-04@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Кресло</a>
+                  <h3 class="card__title">Кресло Nyantuy</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">36 720 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="chair" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/chair-02.png" srcset="./img/products/chair-02@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Кресло</a>
+                  <h3 class="card__title">Кресло Baltsar</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">29 086 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="chair" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/chair-03.png" srcset="./img/products/chair-03@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Кресло</a>
+                  <h3 class="card__title">Кресло Anjay</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">28 700 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <!--  -->
+              <div data-tab-value="beds" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/bed_01.png" srcset="./img/products/bed_01@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Кровать</a>
+                  <h3 class="card__title">Северное Утро</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price" data-value="₽">75 000 ₽</div>
+                    <button class=" card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="beds" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/bed_02.png" srcset="./img/products/bed_02@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Кровать</a>
+                  <h3 class="card__title">Лесная Нежность</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">90 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="beds" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/bed_03.png" srcset="./img/products/bed_03@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Кровать</a>
+                  <h3 class="card__title">Темный Фьельд</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">120 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="beds" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/bed_04.png" srcset="./img/products/bed_04@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Кровать</a>
+                  <h3 class="card__title">Тихий Ветер</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">85 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="beds" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/bed_02.png" srcset="./img/products/bed_02@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Кровать</a>
+                  <h3 class="card__title">Лесная Нежность</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">90 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="beds" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/bed_03.png" srcset="./img/products/bed_03@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Кровать</a>
+                  <h3 class="card__title">Темный Фьельд</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">120 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <!--  -->
+              <div data-tab-value="sofa" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/sofa_01.png" srcset="./img/products/sofa_01@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Диван</a>
+                  <h3 class="card__title">Сканди Комфорт</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">62 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="sofa" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/sofa_02.png" srcset="./img/products/sofa_02@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Диван</a>
+                  <h3 class="card__title">Снежный Уют</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">97 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="sofa" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/sofa_03.png" srcset="./img/products/sofa_03@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Диван</a>
+                  <h3 class="card__title">Оазис тишины</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">89 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="sofa" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/sofa_04.png" srcset="./img/products/sofa_04@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Диван</a>
+                  <h3 class="card__title">Гармония природы</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">105 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="sofa" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/sofa_01.png" srcset="./img/products/sofa_01@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Диван</a>
+                  <h3 class="card__title">Сканди Комфорт</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">62 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="sofa" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/sofa_02.png" srcset="./img/products/sofa_02@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Диван</a>
+                  <h3 class="card__title">Снежный Уют</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">97 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <!--  -->
+              <div data-tab-value="lamp" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/lamp_01.png" srcset="./img/products/lamp_01@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Светильники</a>
+                  <h3 class="card__title">Лунный свет</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">9 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="lamp" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/lamp_02.png" srcset="./img/products/lamp_02@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Светильники</a>
+                  <h3 class="card__title">Яркий маяк</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">21 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="lamp" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/lamp_03.png" srcset="./img/products/lamp_03@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Светильники</a>
+                  <h3 class="card__title">Зимняя ночь</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">10 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="lamp" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/lamp_04.png" srcset="./img/products/lamp_04@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Светильники</a>
+                  <h3 class="card__title">Тихий Огонь</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">7 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="lamp" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/lamp_02.png" srcset="./img/products/lamp_02@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Светильники</a>
+                  <h3 class="card__title">Яркий маяк</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">21 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div data-tab-value="lamp" class="card swiper-slide">
+                <a class="card__link" href="#product-page"></a>
+                <div class="card__photo">
+                  <img class="card__img" src="./img/products/lamp_03.png" srcset="./img/products/lamp_03@2x.png 2x"
+                    alt="Кресло">
+                </div>
+                <div class="card__descr">
+                  <a class="card__category" href="#category">Светильники</a>
+                  <h3 class="card__title">Зимняя ночь</h3>
+
+                  <div class="card__rating">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+                    <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+                  </div>
+
+                  <div class="card__footer">
+                    <div class="card__price">10 000 ₽</div>
+                    <button class="card__btn">
+                      <img class="card__price-img" src="./img/icons/pluse.svg" alt="Кнопка выбрать">
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+
+          <button id="sliderPrev" class="slider__btn slider__btn--prev">
+            <img src="./img/icons/slider-left.svg" alt="Кнопка назад">
+          </button>
+          <button id="sliderNext" class="slider__btn slider__btn--next">
+            <img src="./img/icons/slider-right.svg" alt="Кнопка вперед">
+          </button>
+
+        </div>
+
+
+      </div>
+
+      <div class="products__link">
+        <a class="read-more read-more--products" href="#!">Посмотреть все</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer none">
+    <div class="container container--footer">
+      <div class="footer__grid">
+        <div class="footer__descr">
+          <div class="footer__logo">
+            <a class="logo" href="#!">Cosy Scandi</a>
+          </div>
+          <p class="footer__text">
+            Преимущество нашей мебели заключается в том, что мы обеспечиваем комфортную атмосферу, уют, а так же
+            всестороннюю поддержку.
+          </p>
+        </div>
+        <nav class="footer__nav footer__nav--service">
+          <h3 class="footer__nav-title">Услуги</h3>
+
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#!">Маркетинг</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#!">Компании</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#!">Маркировка</a>
+            </li>
+          </ul>
+
+        </nav>
+        <nav class="footer__nav footer__nav--furniture">
+          <h3 class="footer__nav-title">Мебель</h3>
+
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#!">Кровати</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#!">Стулья</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#!">Все</a>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
+
+      <div class="footer__row">
+
+        <div class="footer__copyright">Авторское право © 2025</div>
+
+        <div class="footer__links">
+          <a class="footer__link" href="#!">Правила и Условия</a>
+          <a class="footer__link" href="#!">Политика конфиденциальности</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

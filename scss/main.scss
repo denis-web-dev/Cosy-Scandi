@@ -1,0 +1,21 @@
+//Base
+@import '../fonts/Gilroy/stylesheet.css';
+@import './base/reset';
+@import './base/base';
+@import './base/vars';
+
+//Blocks
+@import './blocks/header';
+@import './blocks/nav';
+@import './blocks/logo';
+@import './blocks/info-dot';
+@import './blocks/info-hint';
+@import './blocks/benefits';
+@import './blocks/benefit';
+@import './blocks/products';
+@import './blocks/read-more';
+@import './blocks/tab-controls';
+@import './blocks/card';
+@import './blocks/slider';
+@import './blocks/footer';
+@import './blocks/mobile-nav';
