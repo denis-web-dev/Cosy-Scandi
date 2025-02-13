@@ -21,7 +21,9 @@
 }
 
 @mixin retina-bg($image) {
-	@media (-webkit-min-device-pixel-ration: 2), (min-resolution: 192dpi) {
+
+	@media (-webkit-min-device-pixel-ration: 2),
+	(min-resolution: 192dpi) {
 		background-image: url($image);
 	}
 }
@@ -29,5 +31,24 @@
 @mixin tablet() {
 	@media (max-width: 992px) {
 		@content;
+
+		.logo {
+			font-size: 26px;
+		}
+
+		.cart__img {
+			width: 30px;
+			height: 30px;
+		}
+
+		.cart__count {
+			top: -2px;
+			right: -9px;
+			height: 23px;
+			padding: 0 6px;
+			line-height: 22px;
+			font-weight: 500;
+			font-size: 16px;
+		}
 	}
 }

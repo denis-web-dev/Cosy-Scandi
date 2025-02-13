@@ -177,7 +177,8 @@ body {
 .header__title {
   margin: 0 auto;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 60px;
+  line-height: 1.1;
   max-width: 1000px;
   margin-bottom: 14px;
 }
@@ -185,8 +186,8 @@ body {
 .header__description {
   margin: 0 auto;
   font-size: 24px;
-  line-height: 1.6;
-  max-width: 650px;
+  line-height: 1.4;
+  max-width: 615px;
   opacity: 0.8;
 }
 
@@ -276,6 +277,22 @@ body {
   .nav-list {
     display: none;
   }
+  .nav-list .logo {
+    font-size: 26px;
+  }
+  .nav-list .cart__img {
+    width: 30px;
+    height: 30px;
+  }
+  .nav-list .cart__count {
+    top: -2px;
+    right: -9px;
+    height: 23px;
+    padding: 0 6px;
+    line-height: 22px;
+    font-weight: 500;
+    font-size: 16px;
+  }
 }
 
 .cart {
@@ -294,7 +311,7 @@ body {
   height: 25px;
   padding: 0 6px;
   line-height: 25px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: var(--font-cards);
 }
 
@@ -304,6 +321,22 @@ body {
 @media (max-width: 992px) {
   .nav__mobile-btn {
     display: block;
+  }
+  .nav__mobile-btn .logo {
+    font-size: 26px;
+  }
+  .nav__mobile-btn .cart__img {
+    width: 30px;
+    height: 30px;
+  }
+  .nav__mobile-btn .cart__count {
+    top: -2px;
+    right: -9px;
+    height: 23px;
+    padding: 0 6px;
+    line-height: 22px;
+    font-weight: 500;
+    font-size: 16px;
   }
 }
 
@@ -714,11 +747,9 @@ body {
   line-height: 1.6;
 }
 
-.mobile-nav {
+.mobile-nav__wrapper {
+  display: none;
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   right: 0;
   top: 0;
   bottom: 0;
@@ -726,4 +757,34 @@ body {
   padding: 30px 20px;
   background-color: var(--footer-bg);
   color: var(--footer-text-color);
+}
+.mobile-nav__wrapper--open {
+  display: block;
+}
+
+.mobile-nav {
+  display: grid;
+  gap: 20px;
+  font-size: 22px;
+}
+
+.mobile-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobile-cart {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 22px;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
