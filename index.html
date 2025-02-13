@@ -13,22 +13,18 @@
 <body>
   <header class="header">
     <div class="container">
-
       <nav class="header__nav nav">
+
         <div class="nav__logo">
           <a class="logo" href="#!">Cosy Scandi</a>
         </div>
+
         <ul class="nav-list">
           <li class="nav-list__item">
             <a class="nav-list__link" href="#!">
               Каталог
             </a>
           </li>
-          <!-- <li class="nav-list__item">
-            <a class="nav-list__link" href="#!">
-              Магазин
-            </a>
-          </li> -->
           <li class="nav-list__item">
             <a class="nav-list__link" href="#!">
               О нас
@@ -40,13 +36,13 @@
             </a>
           </li>
         </ul>
-        <div class="cart">
-          <a class="cart__link" href="#!">
-            <img class="cart__img" src="./img/icons/cart.svg" alt="корзина">
-            <div class="cart__count">0</div>
-          </a>
-        </div>
-        <button id="open-mobile-nav-btn" class="mobile-nav-btn-open">
+
+        <a class="cart" href="#!">
+          <img class="cart__img" src="./img/icons/cart.svg" alt="корзина">
+          <div class="cart__count">0</div>
+        </a>
+
+        <button id="open-mobile-nav-btn" class="nav-btn">
           <img class="nav__mobile-img" src="./img/icons/mobile-nav.svg" alt="Открытие мобильной навигации">
         </button>
       </nav>
@@ -64,98 +60,97 @@
             <img src="./img/icons/search.svg" alt="Поиск">
           </button>
         </form>
-
-        <div class="header__dot-sofa">
-          <button class="info-dot">
-            <div class="info-dot__circle"></div>
-            <div class="info-dot__radius"></div>
-          </button>
-          <div class="info-hint none">
-            <label>
-              <input class="info-hint__radio" type="radio" name="sofa-color">
-              <div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
-            </label>
-            <label>
-              <input class="info-hint__radio" type="radio" name="sofa-color">
-              <div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
-            </label>
-            <label>
-              <input class="info-hint__radio" type="radio" name="sofa-color">
-              <div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
-            </label>
-          </div>
-        </div>
-
-        <div class="header__dot-vase">
-          <button class="info-dot">
-            <div class="info-dot__circle"></div>
-            <div class="info-dot__radius"></div>
-          </button>
-          <div class="info-hint none">
-            <label>
-              <input class="info-hint__radio" type="radio" name="sofa-color">
-              <div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
-            </label>
-            <label>
-              <input class="info-hint__radio" type="radio" name="sofa-color">
-              <div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
-            </label>
-            <label>
-              <input class="info-hint__radio" type="radio" name="sofa-color">
-              <div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
-            </label>
-          </div>
-        </div>
-
-        <div class="header__dot-item">
-          <button class="info-dot">
-            <div class="info-dot__circle"></div>
-            <div class="info-dot__radius"></div>
-          </button>
-          <div class="info-hint none">
-            <label>
-              <input class="info-hint__radio" type="radio" name="sofa-color">
-              <div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
-            </label>
-            <label>
-              <input class="info-hint__radio" type="radio" name="sofa-color">
-              <div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
-            </label>
-            <label>
-              <input class="info-hint__radio" type="radio" name="sofa-color">
-              <div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
-            </label>
-          </div>
-        </div>
-
-        <div class="header__dot-pot">
-          <button class="info-dot">
-            <div class="info-dot__circle"></div>
-            <div class="info-dot__radius"></div>
-          </button>
-          <div class="info-hint none">
-            <label>
-              <input class="info-hint__radio" type="radio" name="sofa-color">
-              <div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
-            </label>
-            <label>
-              <input class="info-hint__radio" type="radio" name="sofa-color">
-              <div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
-            </label>
-            <label>
-              <input class="info-hint__radio" type="radio" name="sofa-color">
-              <div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
-            </label>
-          </div>
-        </div>
-
       </div>
 
+      <div class="header__dot-sofa">
+        <button class="info-dot">
+          <div class="info-dot__circle"></div>
+          <div class="info-dot__radius"></div>
+        </button>
+        <div class="info-hint none">
+          <label>
+            <input class="info-hint__radio" type="radio" name="sofa-color">
+            <div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
+          </label>
+          <label>
+            <input class="info-hint__radio" type="radio" name="sofa-color">
+            <div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
+          </label>
+          <label>
+            <input class="info-hint__radio" type="radio" name="sofa-color">
+            <div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
+          </label>
+        </div>
+      </div>
+
+      <div class="header__dot-vase">
+        <button class="info-dot">
+          <div class="info-dot__circle"></div>
+          <div class="info-dot__radius"></div>
+        </button>
+        <div class="info-hint none">
+          <label>
+            <input class="info-hint__radio" type="radio" name="sofa-color">
+            <div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
+          </label>
+          <label>
+            <input class="info-hint__radio" type="radio" name="sofa-color">
+            <div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
+          </label>
+          <label>
+            <input class="info-hint__radio" type="radio" name="sofa-color">
+            <div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
+          </label>
+        </div>
+      </div>
+
+      <div class="header__dot-item">
+        <button class="info-dot">
+          <div class="info-dot__circle"></div>
+          <div class="info-dot__radius"></div>
+        </button>
+        <div class="info-hint none">
+          <label>
+            <input class="info-hint__radio" type="radio" name="sofa-color">
+            <div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
+          </label>
+          <label>
+            <input class="info-hint__radio" type="radio" name="sofa-color">
+            <div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
+          </label>
+          <label>
+            <input class="info-hint__radio" type="radio" name="sofa-color">
+            <div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
+          </label>
+        </div>
+      </div>
+
+      <div class="header__dot-pot">
+        <button class="info-dot">
+          <div class="info-dot__circle"></div>
+          <div class="info-dot__radius"></div>
+        </button>
+        <div class="info-hint none">
+          <label>
+            <input class="info-hint__radio" type="radio" name="sofa-color">
+            <div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
+          </label>
+          <label>
+            <input class="info-hint__radio" type="radio" name="sofa-color">
+            <div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
+          </label>
+          <label>
+            <input class="info-hint__radio" type="radio" name="sofa-color">
+            <div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
+          </label>
+        </div>
+      </div>
     </div>
 
     <div id="mobile-nav" class="mobile-nav-wrapper">
 
       <div class="mobile-nav-header">
+
         <a class="mobile-cart" href="#cart">
           <div class="cart">
             <img class="cart__img" src="./img/icons/cart.svg" alt="корзина">
@@ -187,7 +182,11 @@
         </li>
       </ul>
     </div>
+
   </header>
+
+
+
 
   <section class="benefits none">
     <div class="container">
@@ -236,7 +235,6 @@
           <button data-tab="sofa" class="tab-controls__btn">Диван</button>
           <button data-tab="lamp" class="tab-controls__btn">Светильники</button>
         </div>
-
       </div>
 
       <div class="products__slider">
@@ -244,6 +242,7 @@
         <div class="slider">
 
           <div class="swiper">
+
             <div class="swiper-wrapper">
 
               <div data-tab-value="chair" class="card swiper-slide">
@@ -978,6 +977,9 @@
       </div>
     </div>
   </footer>
+
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
