@@ -19,6 +19,13 @@
 		}
 	}
 
+	@include mobile() {
+		padding-top: 20px;
+		padding-bottom: 240px;
+		background-position: center;
+		aspect-ratio: unset;
+	}
+
 }
 
 .header__nav {
@@ -38,8 +45,9 @@
 
 .header__title {
 	margin: 0 auto;
+	padding-bottom: 20px;
 	font-weight: 700;
-	font-size: clamp(28px, 0.821rem + 4.64vw, 80px);
+	font-size: clamp(28px, 1.179rem + 2.86vw, 60px);
 	text-wrap: balance;
 	line-height: 1.10;
 	max-width: 1000px;
@@ -51,7 +59,7 @@
 	margin: 0 auto;
 	// font-size: 24px;
 	font-size: clamp(16px, 0.857rem + 0.71vw, 24px);
-	text-wrap: balance;
+
 	line-height: 1.4;
 	max-width: 615px;
 

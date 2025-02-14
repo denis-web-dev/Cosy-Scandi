@@ -171,6 +171,14 @@ body {
 .header a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
+@media (max-width: 629px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 240px;
+    background-position: center;
+    aspect-ratio: unset;
+  }
+}
 
 .header__nav {
   margin-bottom: clamp(20px, 0.071rem + 5.89vw, 86px);
@@ -189,8 +197,9 @@ body {
 
 .header__title {
   margin: 0 auto;
+  padding-bottom: 20px;
   font-weight: 700;
-  font-size: clamp(28px, 0.821rem + 4.64vw, 80px);
+  font-size: clamp(28px, 1.179rem + 2.86vw, 60px);
   text-wrap: balance;
   line-height: 1.1;
   max-width: 1000px;
@@ -199,7 +208,6 @@ body {
 .header__description {
   margin: 0 auto;
   font-size: clamp(16px, 0.857rem + 0.71vw, 24px);
-  text-wrap: balance;
   line-height: 1.4;
   max-width: 615px;
   opacity: 0.8;
@@ -617,6 +625,11 @@ body {
   border-radius: 44px;
   background: #eeeeee;
 }
+@media (max-width: 330px) {
+  .tab-controls {
+    flex-direction: column;
+  }
+}
 
 .tab-controls__btn {
   display: flex;
@@ -639,6 +652,11 @@ body {
 }
 .tab-controls__btn--active:hover {
   background-color: #fff;
+}
+@media (max-width: 629px) {
+  .tab-controls__btn {
+    line-height: 1;
+  }
 }
 
 .card {

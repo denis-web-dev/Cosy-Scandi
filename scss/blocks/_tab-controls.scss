@@ -4,7 +4,14 @@
 	align-items: center;
 	border-radius: 44px;
 	background: #eeeeee;
+
+
+
+	@include mobile-xs() {
+		flex-direction: column;
+	}
 }
+
 .tab-controls__btn {
 	display: flex;
 	justify-content: center;
@@ -33,5 +40,9 @@
 		&:hover {
 			background-color: #fff;
 		}
+	}
+
+	@include mobile() {
+		line-height: 1;
 	}
 }
