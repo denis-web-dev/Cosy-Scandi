@@ -25,6 +25,13 @@
 	margin-bottom: clamp(20px, 0.071rem + 5.89vw, 86px);
 }
 
+.cart__img {
+	@include tablet {
+		width: 30px;
+		height: 30px;
+	}
+}
+
 .header__content {
 	text-align: center;
 }
@@ -44,6 +51,7 @@
 	margin: 0 auto;
 	// font-size: 24px;
 	font-size: clamp(16px, 0.857rem + 0.71vw, 24px);
+	text-wrap: balance;
 	line-height: 1.4;
 	max-width: 615px;
 
@@ -53,6 +61,10 @@
 .header__search {
 	display: inline-block;
 	margin: 35px auto 0;
+
+	@include tablet-820() {
+		display: none;
+	}
 }
 
 .search-form {
@@ -77,6 +89,11 @@
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.5;
+
+	&::placeholder {
+		color: #fff;
+		font-weight: 400;
+	}
 }
 
 .search-form__btn {
@@ -90,28 +107,32 @@
 	border-radius: 24px;
 }
 
-.header__dot-sofa {
+.header__dot {
 	position: absolute;
+
+	@include tablet-820() {
+		display: none;
+	}
+}
+
+.header__dot--sofa {
 	left: calc(296 * 100% / 1440);
 	top: calc(685 * 100% / 1084);
 }
 
-.header__dot-vase {
-	position: absolute;
+.header__dot--vase {
 	left: calc(114 * 100% / 1440);
 	top: calc(754 * 100% / 1084);
 
 	transform: translate(-40%, -40%);
 }
 
-.header__dot-item {
-	position: absolute;
+.header__dot--item {
 	left: calc(793 * 100% / 1440);
 	top: calc(787 * 100% / 1084);
 }
 
-.header__dot-pot {
-	position: absolute;
+.header__dot--pot {
 	left: calc(1357 * 100% / 1440);
 	top: calc(815 * 100% / 1084);
 	transform: translate(15%, 15%);

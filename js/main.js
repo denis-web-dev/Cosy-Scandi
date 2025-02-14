@@ -7,6 +7,11 @@ for (let btn of infoBtn) {
 
 function showHint(e) {
   e.stopPropagation();
+
+  for (let hint of infoHints) {
+    hint.classList.add('none');
+  }
+
   this.parentNode.querySelector('.info-hint').classList.toggle('none');
 }
 document.addEventListener('click', closeHints);
