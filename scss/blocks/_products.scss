@@ -11,6 +11,10 @@
 
 .products__tabs {
 	margin-bottom: 80px;
+
+	@include mobile() {
+		display: none;
+	}
 }
 
 .products__slider {

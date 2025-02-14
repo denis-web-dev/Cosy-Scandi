@@ -5,10 +5,8 @@
 	border-radius: 44px;
 	background: #eeeeee;
 
-
-
-	@include mobile-xs() {
-		flex-direction: column;
+	@include mobile() {
+		display: none;
 	}
 }
 

@@ -586,6 +586,11 @@ body {
 .products__tabs {
   margin-bottom: 80px;
 }
+@media (max-width: 629px) {
+  .products__tabs {
+    display: none;
+  }
+}
 
 .products__slider {
   margin-bottom: clamp(30px, 0.982rem + 4.46vw, 60px);
@@ -625,9 +630,9 @@ body {
   border-radius: 44px;
   background: #eeeeee;
 }
-@media (max-width: 330px) {
+@media (max-width: 629px) {
   .tab-controls {
-    flex-direction: column;
+    display: none;
   }
 }
 
