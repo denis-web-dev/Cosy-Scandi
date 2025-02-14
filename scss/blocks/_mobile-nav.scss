@@ -58,3 +58,25 @@
 	font-size: 22px;
 	font-weight: 500;
 }
+
+
+.mobile-sub-nav {
+	display: grid;
+	gap: 14px;
+	font-size: 16px;
+
+	padding: 20px 0 0 20px;
+
+	a {
+		transition: color 0.1s ease-in;
+
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+}
+
+.mobile-sub-nav__item {}
+
+.mobile-sub-nav__link {}

@@ -338,8 +338,8 @@ body {
   gap: 8px;
 }
 .nav-list__link--dropdown::after {
-  content: url("./../img/icons/arrow-down.svg");
-  height: 18px;
+  content: url("./../../img/icons/arrow-nav.svg");
+  height: 21px;
 }
 
 .nav-list__item:hover {
@@ -348,24 +348,21 @@ body {
   transform: translate(0%, 0%);
 }
 
-.cart {
-  position: relative;
-  align-self: center;
-  justify-self: end;
+.nav-list__sub-nav {
+  opacity: 0;
+  width: 160px;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transform: translate(0%, 10%);
+  transition: all 0.2s ease-in;
 }
 
-.cart__count {
-  position: absolute;
-  display: inline-block;
-  top: 3px;
-  right: -6px;
-  background-color: var(--accent);
-  border-radius: 40px;
-  height: 25px;
-  padding: 0 6px;
-  line-height: 25px;
-  font-weight: 500;
-  font-family: var(--font-cards);
+.nav-list__item:hover .nav-list__sub-nav {
+  pointer-events: all;
+  opacity: 1;
+  transform: translate(0%, 0%);
 }
 
 .nav-btn {
@@ -391,6 +388,43 @@ body {
     font-weight: 500;
     font-size: 16px;
   }
+}
+
+.cart {
+  position: relative;
+  align-self: center;
+  justify-self: end;
+}
+
+.cart__count {
+  position: absolute;
+  display: inline-block;
+  top: 3px;
+  right: -6px;
+  background-color: var(--accent);
+  border-radius: 40px;
+  height: 25px;
+  padding: 0 6px;
+  line-height: 25px;
+  font-weight: 500;
+  font-family: var(--font-cards);
+}
+
+.sub-nav {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: var(--footer-bg);
+  color: var(-footer-text-color);
+  font-size: 16px;
+}
+.sub-nav a {
+  color: var(--footer-text-color);
+  transition: color 0.1s ease-in;
+}
+.sub-nav a:hover {
+  color: var(--accent);
 }
 
 .logo {
@@ -848,4 +882,17 @@ body {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 22px;
   font-weight: 500;
+}
+
+.mobile-sub-nav {
+  display: grid;
+  gap: 14px;
+  font-size: 16px;
+  padding: 20px 0 0 20px;
+}
+.mobile-sub-nav a {
+  transition: color 0.1s ease-in;
+}
+.mobile-sub-nav a:hover {
+  color: var(--accent);
 }/*# sourceMappingURL=main.css.map */
