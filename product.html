@@ -7,7 +7,6 @@
   <title>Карточка товара</title>
   <link href="./css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
 </head>
 
 <body>
@@ -115,14 +114,76 @@
 
   <section class="product-content">
     <div class="container">
+
       <div class="product__top">
         <h3 class="product__title">Главная</h3>
         <img class="product__img" src="./img/icons/circle.svg" alt="круг">
         <h3 class="product__title product__title--active">Диван</h3>
       </div>
-    </div>
+
+      <div class="product-slider">
+        <img class="product-slider__img" src="./img/product-page/slider.png" alt="">
+      </div>
+
+
+      <div class="product-info">
+
+        <div class="product-info__name">
+          <div class="product-info__rating">
+            <div class="card__rating">
+              <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+              <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+              <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+              <img class="card__star" src="./img/icons/star.svg" alt="звезда">
+              <img class="card__star" src="./img/icons/star-off.svg" alt="Не выбранная звезда">
+            </div>
+          </div>
+          <h1 class="product-info__title">Сканди Комфорт</h1>
+        </div>
+
+        <div class="product-info__specifications">
+
+          <div class="product-color">
+            <p class="product-color__text text-accent">Цвета</p>
+            <div class="product-color__dots">
+              <div class="product-hint">
+                <label>
+                  <input class="product-hint__radio" type="radio" name="sofa-color">
+                  <div class="product-hint__radio-fake product-hint__radio-fake--orange"></div>
+                </label>
+                <label>
+                  <input class="product-hint__radio" type="radio" name="sofa-color">
+                  <div class="product-hint__radio-fake product-hint__radio-fake--brown"></div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="material">
+            <p class="material__text text-accent">Материал</p>
+            <p class="material__text material__text--descr">Велюр</p>
+          </div>
+        </div>
+
+        <div class="price">
+          <div class="price-btn">
+            <button class="price-btn__descr">1</button>
+            <button class="price__btn">Добавить в корзину</button>
+          </div>
+          <div class="price__text">
+            <p class="price__text-cost">Стоимость</p>
+            <p class="price__text-priced">62 000 ₽</p>
+          </div>
+        </div>
+
+      </div>
+
   </section>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="./js/product.js"></script>
 </body>
 
 </html>

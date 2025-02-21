@@ -58,7 +58,6 @@ const swiper = new Swiper('.swiper', {
 const tabsBtns = document.querySelectorAll('[data-tab]');
 const tabsProducts = document.querySelectorAll('[data-tab-value]');
 
-
 for (let btn of tabsBtns) {
   btn.addEventListener('click', function () {
 

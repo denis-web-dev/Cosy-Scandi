@@ -145,6 +145,7 @@ body {
   --footer-text-color: rgba(255, 255, 255, 0.8);
   --ui-orange: #e58411;
   --ui-biruza: #00d6c9;
+  --ui-brown: #930608;
   --ui-gray: #7c7c7c;
   --ui-dark-blue: #0d1b39;
   --font-main: "Gilroy", sans-serif;
@@ -1006,7 +1007,7 @@ body {
   opacity: 0.7;
 }
 .nav-product-list__link::after {
-  content: url("./../../img/icons/arrow-product.svg");
+  content: url("./../img/icons/arrow-product.svg");
   height: 21px;
 }
 
@@ -1042,14 +1043,32 @@ body {
   }
 }
 
+.sub-nav {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: var(--footer-bg);
+  color: var(-footer-text-color);
+  font-size: 16px;
+}
+.sub-nav a {
+  color: var(--footer-text-color);
+  transition: color 0.1s ease-in;
+}
+.sub-nav a:hover {
+  color: var(--accent);
+}
+
 .product-content {
-  display: flex;
+  margin-bottom: 40px;
 }
 
 .product__top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 17px;
 }
 
 .product__title {
@@ -1070,4 +1089,177 @@ body {
   font-size: 17px;
   line-height: 20px;
   color: rgba(141, 141, 141, 0.5);
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-info__rating {
+  margin-bottom: 12px;
+}
+
+.card__rating {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.product-info__title {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+
+.product-info__specifications {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 240px;
+}
+
+.product-color {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-accent {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--product-text-color);
+  opacity: 0.8;
+}
+
+.material {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+}
+
+.material__text--descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--text-color);
+}
+
+.price {
+  display: flex;
+  width: 248px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price__btn {
+  padding: 12px 49px;
+  background: #1e1e1e;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.price__text {
+  display: flex;
+  justify-content: space-between;
+  width: 245px;
+}
+
+.price__text-priced {
+  font-weight: 500;
+}
+
+.price-btn {
+  display: flex;
+  width: 344px;
+  align-items: flex-start;
+  margin-right: 94px;
+}
+
+.price-btn__descr {
+  position: relative;
+  border: 1px solid #8d8d8d;
+  border-radius: 50px;
+  padding: 14px 37px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 0.9;
+  margin-right: 16px;
+}
+.price-btn__descr::after {
+  position: absolute;
+  content: "";
+  background-image: url(./../img/icons/minus.svg);
+  width: 16px;
+  height: 16px;
+  top: 14px;
+  left: 12px;
+}
+.price-btn__descr::before {
+  position: absolute;
+  content: "";
+  background-image: url(./../img/icons/plus.svg);
+  width: 16px;
+  height: 16px;
+  top: 14px;
+  right: 13px;
+}
+
+.product-color__dots {
+  position: relative;
+}
+
+.product-hint {
+  position: absolute;
+  top: 24px;
+  left: 170px;
+  transform: translate(-50%, -100%);
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding-top: 12px;
+}
+
+.product-hint__radio {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.product-hint__radio:checked + .product-hint__radio-fake {
+  background-image: url("/img/icons/checkbox-no.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.product-hint__radio-fake {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background-color: gray;
+  border: 2px solid #e4e4e4;
+  border-radius: 50%;
+}
+.product-hint__radio-fake--orange {
+  background-color: var(--ui-orange);
+}
+.product-hint__radio-fake--brown {
+  background-color: var(--ui-brown);
+}
+
+.product-slider {
+  margin: 20px 0;
 }/*# sourceMappingURL=main.css.map */

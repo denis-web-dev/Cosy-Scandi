@@ -1,0 +1,50 @@
+.product-color__dots {
+  position: relative;
+}
+
+.product-hint {
+  position: absolute;
+  top: 24px;
+  left: 170px;
+  transform: translate(-50%, -100%);
+
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding-top: 12px;
+
+
+}
+
+.product-hint__radio {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.product-hint__radio:checked+.product-hint__radio-fake {
+  background-image: url('/img/icons/checkbox-no.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.product-hint__radio-fake {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background-color: gray;
+  border: 2px solid #e4e4e4;
+  border-radius: 50%;
+
+  &--orange {
+    background-color: var(--ui-orange);
+  }
+
+  &--brown {
+    background-color: var(--ui-brown);
+  }
+}

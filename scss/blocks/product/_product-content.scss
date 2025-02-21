@@ -1,12 +1,13 @@
 .product-content {
-  display: flex;
+  margin-bottom: 40px;
 }
-
 
 .product__top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+
+  margin-bottom: 17px;
 }
 
 .product__title {
