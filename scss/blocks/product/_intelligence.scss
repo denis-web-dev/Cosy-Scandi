@@ -1,0 +1,34 @@
+.intelligence {
+  padding: 150px 0 263px 0;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.intelligence__tabs {
+  margin-bottom: 99px;
+
+  @include mobile() {
+    display: none;
+  }
+}
+
+.intelligence-descr {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intelligence-img {
+  margin-bottom: 40px;
+}
+
+.intelligence-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: center;
+
+  color: rgba(30, 30, 30, 0.8);
+
+  max-width: 543px;
+}
