@@ -25,14 +25,46 @@
 		background-position: center;
 		aspect-ratio: unset;
 	}
-
 }
+
+// .header-sofa {
+// 	position: relative;
+// 	padding-top: 40px;
+// 	background-color: var(--footer-bg);
+// 	background-image: url('./../../img/header/sofa-green.jpg');
+// 	background-size: cover;
+
+// 	aspect-ratio: 1440 / 1084;
+
+// 	color: var(--header-text-color);
+
+// 	@include retina-bg(url('./../img/header/sofa-green@2x.jpg'));
+
+// 	a {
+// 		color: var(--header-text-color);
+
+// 		&:hover {
+// 			color: rgba(255, 255, 255, 0.6);
+// 		}
+// 	}
+
+// 	@include mobile() {
+// 		padding-top: 20px;
+// 		padding-bottom: 240px;
+// 		background-position: center;
+// 		aspect-ratio: unset;
+// 	}
+
+// 	opacity: 0;
+// }
 
 .header__nav {
 	margin-bottom: clamp(20px, 0.071rem + 5.89vw, 86px);
 }
 
 .cart__img {
+	transform: scaleX(-1);
+
 	@include tablet {
 		width: 30px;
 		height: 30px;

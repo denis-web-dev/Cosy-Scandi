@@ -1,6 +1,7 @@
 @import '../fonts/Gilroy/stylesheet.css';
 /* Reset and base styles  */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@400;600&display=swap");
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 * {
   padding: 0px;
   margin: 0px;
@@ -144,7 +145,7 @@ body {
   --footer-bg: #2d2f33;
   --footer-text-color: rgba(255, 255, 255, 0.8);
   --ui-orange: #e58411;
-  --ui-biruza: #00d6c9;
+  --ui-green: #019740;
   --ui-brown: #930608;
   --ui-gray: #7c7c7c;
   --ui-dark-blue: #0d1b39;
@@ -186,6 +187,9 @@ body {
   margin-bottom: clamp(20px, 0.071rem + 5.89vw, 86px);
 }
 
+.cart__img {
+  transform: scaleX(-1);
+}
 @media (max-width: 992px) {
   .cart__img {
     width: 30px;
@@ -536,8 +540,8 @@ body {
 .info-hint__radio-fake--orange {
   background-color: var(--ui-orange);
 }
-.info-hint__radio-fake--biruza {
-  background-color: var(--ui-biruza);
+.info-hint__radio-fake--green {
+  background-color: var(--ui-green);
 }
 .info-hint__radio-fake--gray {
   background-color: var(--ui-gray);
@@ -733,6 +737,49 @@ body {
   color: var(--text-card-dark-blue);
 }
 
+/****** Style Star Rating Widget *****/
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #FFD700;
+}
+
+/* hover previous stars in list */
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #FFED85;
+}
+
 .card__rating {
   display: flex;
   align-items: center;
@@ -769,6 +816,10 @@ body {
 }
 .card__btn:hover {
   background-color: var(--accent);
+}
+.card__btn .card__price-img {
+  width: 30px;
+  height: 30px;
 }
 
 .slider {
@@ -1098,6 +1149,64 @@ body {
 
 .product-info__rating {
   margin-bottom: 12px;
+}
+
+fieldset,
+label {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+/****** Style Star Rating Widget *****/
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #FFD700;
+}
+
+/* hover previous stars in list */
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #FFED85;
 }
 
 .card__rating {
