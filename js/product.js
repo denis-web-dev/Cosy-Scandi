@@ -1,10 +1,10 @@
-// Функция для получения ID товара
-function getProductId() {
-  const productContainer = document.querySelector('.product-info');
-  return productContainer ? productContainer.dataset.productId : null;
-}
+// // Функция для получения ID товара
+// function getProductId() {
+//   const productContainer = document.querySelector('.product-info');
+//   return productContainer ? productContainer.dataset.productId : null;
+// }
 
-// Загрузка рейтинга при открытии страницы
+// // Загрузка рейтинга при открытии страницы
 // function loadRating() {
 //   const productId = getProductId();
 //   if (!productId) return;
@@ -21,7 +21,7 @@ function getProductId() {
 //   }
 // }
 
-// Сохраняем рейтинг при выборе
+// // Сохраняем рейтинг при выборе
 // document.querySelectorAll('.rating input').forEach(input => {
 //   input.addEventListener('change', () => {
 //     const productId = getProductId();
@@ -33,7 +33,7 @@ function getProductId() {
 //   });
 // });
 
-// Инициализация при загрузке страницы
-document.addEventListener('DOMContentLoaded', () => {
-  loadRating();
-});
+// // Инициализация при загрузке страницы
+// document.addEventListener('DOMContentLoaded', () => {
+//   loadRating();
+// });
