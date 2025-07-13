@@ -40,11 +40,10 @@ h1 {
   font-size: 1.25em;
   font-family: FontAwesome;
   display: inline-block;
-  // content: "\f005";
+  content: "\f005";
 }
 
 .rating>.half:before {
-  content: "";
   position: absolute;
 }
 
@@ -52,8 +51,6 @@ h1 {
   color: #ddd;
   float: right;
 }
-
-/***** CSS Magic to Highlight Stars on Hover *****/
 
 .rating>input:checked~label,
 /* show gold star when clicked */
@@ -158,8 +155,6 @@ h1 {
   justify-content: space-between;
   width: 245px;
 }
-
-.price__text-cost {}
 
 .price__text-priced {
   font-weight: 500;

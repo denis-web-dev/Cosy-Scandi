@@ -165,7 +165,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ration: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .header {
-    background-image: url("./../img/header/header-bg@2x.jpg");
+    background-image: url(url("./../img/header/header-bg@2x.jpg"));
   }
 }
 .header a {
@@ -548,7 +548,7 @@ body {
 }
 
 .benefits {
-  padding: clamp(60px, 2.679rem + 5.36vw, 120px) 0;
+  padding: 120px 0 0 0;
 }
 
 .benefits__grid {
@@ -587,8 +587,12 @@ body {
   margin-bottom: 14px;
 }
 
+.benefits-bg {
+  margin-top: 160px;
+}
+
 .products {
-  padding: 50px 0;
+  padding: 120px 0;
   text-align: center;
   background-color: #f7f7f7;
 }
@@ -1145,7 +1149,6 @@ h1 {
 }
 
 .rating > .half:before {
-  content: "\f089";
   position: absolute;
 }
 
@@ -1154,7 +1157,6 @@ h1 {
   float: right;
 }
 
-/***** CSS Magic to Highlight Stars on Hover *****/
 .rating > input:checked ~ label,
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label {
