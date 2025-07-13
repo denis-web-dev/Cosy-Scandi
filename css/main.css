@@ -165,7 +165,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ration: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .header {
-    background-image: url(url("./../img/header/header-bg@2x.jpg"));
+    background-image: url("./../img/header/header-bg@2x.jpg");
   }
 }
 .header a {
